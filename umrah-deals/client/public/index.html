@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Umrah Deals - Last Minute Flight & Hotel Packages</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <h1 class="text-2xl font-bold text-emerald-600">UK Umrah Deals</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-emerald-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#packages" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Packages</a>
+                        <a href="#flights" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Flights</a>
+                        <a href="#hotels" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Hotels</a>
+                        <a href="#contact" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1564769625905-50e93615e769?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80" alt="Masjid al-Haram">
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Last Minute Umrah Deals</h1>
+            <p class="mt-6 text-xl text-gray-300 max-w-3xl">Find the best UK deals on flights and hotels for your spiritual journey. Book your package today and save up to 30% on last-minute offers.</p>
+            <div class="mt-10" id="search-results">
+                <div class="bg-white rounded-lg p-6 shadow-xl max-w-4xl">
+                    <form id="search-form" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Departure</label>
+                            <select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-md">
+                                <option>London (LHR)</option>
+                                <option>Manchester (MAN)</option>
+                                <option>Birmingham (BHX)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Travel Date</label>
+                            <input type="date" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-md">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Duration</label>
+                            <select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm rounded-md">
+                                <option>7 Days</option>
+                                <option>14 Days</option>
+                                <option>21 Days</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-3">
+                            <button id="search-button" class="w-full bg-emerald-500 text-white px-4 py-2 rounded-md text-lg font-medium hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                                Search Packages
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Packages Section -->
+    <div class="bg-white py-12" id="packages">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Featured Umrah Packages</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                    Choose from our carefully selected packages including flights, hotels, and ground transportation.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Package Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1591977559800-65ee8f62aad5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80" alt="Makkah Package">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">Last Minute</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase">7 Days</div>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Premium Makkah Package</h3>
+                        <p class="mt-2 text-gray-500">Includes return flights from London, 5-star hotel stay, and ground transfers.</p>
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-plane-departure text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">London (LHR) → Jeddah (JED)</span>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-hotel text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">5★ Hotel near Haram</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-2xl font-bold text-gray-900">£1,999</span>
+                                <span class="text-sm text-gray-600 ml-2">per person</span>
+                            </div>
+                            <button class="bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581266299199-6a43cce1e1d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80" alt="Madinah Package">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">Popular</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase">14 Days</div>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Makkah & Madinah Package</h3>
+                        <p class="mt-2 text-gray-500">Complete package with stays in both holy cities and premium services.</p>
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-plane-departure text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Manchester (MAN) → Madinah (MED)</span>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-hotel text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">4★ Hotels in Both Cities</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-2xl font-bold text-gray-900">£2,499</span>
+                                <span class="text-sm text-gray-600 ml-2">per person</span>
+                            </div>
+                            <button class="bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1570841398833-43e352b440ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80" alt="Economy Package">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">Best Value</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase">10 Days</div>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Economy Friendly Package</h3>
+                        <p class="mt-2 text-gray-500">Affordable package with comfortable accommodations and services.</p>
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-plane-departure text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">Birmingham (BHX) → Jeddah (JED)</span>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-hotel text-gray-400 mr-2"></i>
+                                <span class="text-gray-600">3★ Hotel with Good Location</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span class="text-2xl font-bold text-gray-900">£1,699</span>
+                                <span class="text-sm text-gray-600 ml-2">per person</span>
+                            </div>
+                            <button class="bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Why Choose Us</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                    We provide comprehensive Umrah services with a focus on quality and convenience.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-3">
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white mx-auto">
+                        <i class="fas fa-pound-sign text-xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-lg font-medium text-gray-900">Best Price Guarantee</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        We offer competitive prices and match any genuine quote from UK-based travel agencies.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white mx-auto">
+                        <i class="fas fa-headset text-xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-lg font-medium text-gray-900">24/7 Support</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        Our dedicated support team is available round the clock to assist you.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white mx-auto">
+                        <i class="fas fa-shield-alt text-xl"></i>
+                    </div>
+                    <h3 class="mt-6 text-lg font-medium text-gray-900">ATOL Protected</h3>
+                    <p class="mt-2 text-base text-gray-500">
+                        All our flight-inclusive packages are fully ATOL protected for your peace of mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-white py-12" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Us</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                    Get in touch with our team for personalized assistance with your Umrah journey.
+                </p>
+            </div>
+
+            <div class="mt-12 max-w-lg mx-auto">
+                <form id="contact-form" class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" name="name" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" id="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full bg-emerald-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">UK Umrah Deals</h3>
+                    <p class="text-gray-400 text-sm">
+                        Your trusted partner for Umrah travel packages from the UK.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:text-white">Packages</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> +44 20 1234 5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@ukumrahdeals.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> London, United Kingdom</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 UK Umrah Deals. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
